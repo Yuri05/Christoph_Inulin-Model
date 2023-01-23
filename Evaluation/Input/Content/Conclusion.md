@@ -1,4 +1,2 @@
-The herein presented PBPK model adequately describes the pharmacokinetics of COMPOUND in adults.
-
-In particular, it applies quantitative ... Thus, the model is fit for purpose to be applied for...
+The herein presented PBPK model overall adequately describes the plasma pharmacokinetics of inulin in rats. Tissue concentrations tend to be  overestimated by the model, the largest deviations being observed for lung, gut, and heart concentrations. Simulations are predictions without adjusting any compound specific parameter (i.e., using a literature value for the solute radius of inulin and the default physiological parameters in PK-Sim especially for the glomerular filtration rate, vascular properties and compartment volumes). 
 

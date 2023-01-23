@@ -1,40 +1,19 @@
-### In vitro / physico-chemical Data <a id="invitro-and-physico-chemical-data"></a>
+### 2.2.1	In vitro / physico-chemical Data
 
-A literature search was performed to collect available information on physicochemical properties of dapagliflozin. The obtained information from literature is summarized in the table below. 
+A literature search was performed to collect available information on physicochemical properties of Inulin. The obtained information from literature is summarized in the table below. 
 
-| **Parameter**   | **Unit** | **Value** | Source                                     | **Description**                                 |
-| :-------------- | -------- | --------- | ------------------------------------------ | ----------------------------------------------- |
-| MW              | g/mol    |           | [Dummy YEAR](#main-references)               | Molecular weight                                |
-| pK<sub>a</sub>  |          |           | [DrugBank DB06292](#main-references)         | Acid dissociation constant                      |
-| Solubility (pH) |          |           | [Dummy YEAR](#main-references)               | Aqueous Solubility, FaSSIF, ...                 |
-| logP            |          |           | [Dummy YEAR](#main-references) (experimental) | Partition coefficient between octanol and water |
-| fu              | %        |           | [Dummy YEAR](#main-references)                | Fraction unbound in plasma                      |
-| B/P ratio       |          |           | [Dummy YEAR](#main-references)                | Blood to plasma ratio                           |
-| ...             |          |           |                                            | ....                                            |
+| **Parameter** | **Unit** | **Value** | Source                           | **Description**                                              |
+| :------------ | -------- | --------- | -------------------------------- | ------------------------------------------------------------ |
+| MW            | g/mol    | 5000-5500 | [Ohno 1978](#5-references)       | Molecular weight                                             |
+| r             | nm       | 1.39      | [Ghandehari 1997](#5-references) | Hydrodynamic solute radius                                   |
+| logP          | µM       | < -10     | [Dubbelboer 2022](#5-references) | Lipophilicity (octanol/water partition coefficient). Inulin is highly hydrophilic. A logP = -10 is insensitively small in the PBPK model. |
+| Kd (FcRn)     | µM       | 999,999   |                                  | Dissociation constant for binding to FcRn. High value representing no FcRn binding. |
 
-### Clinical Data  <a id="clinical-data"></a>
+### 2.2.2	PK Data
 
-A literature search was performed to collect available clinical data on dapagliflozin in healthy adults.
+Published plasma and tissue PK data on inulin in rats were used.
 
-#### Model Building <a id="model-building"></a>
-
-The following studies were used for model building (training data):
-
-| Publication                 | Arm / Treatment / Information used for model building |
-| :-------------------------- | :---------------------------------------------------- |
-| [Dummy YEAR](#main-references) | Healthy Subjects with a single dose of X mg           |
-| ...                         | ...                                                   |
-| ...                         | ...                                                   |
-| ...                         | ...                                                   |
-
-#### Model Verification <a id="model-verification"></a>
-
-The following studies were used for model verification:
-
-| Publication                 | Arm / Treatment / Information used for model building |
-| :-------------------------- | :---------------------------------------------------- |
-| [Dummy YEAR](#main-references) | Healthy Subjects with a single dose of Y mg           |
-| ...                         | ...                                                   |
-| ...                         | ...                                                   |
-| ...                         | ...                                                   |
+| Publication                 | Description                                                  |
+| :-------------------------- | :----------------------------------------------------------- |
+| [Tsuji 1983](#5-references) | Plasma and tissue concentrations after i.v. application of 20 and 200 mg/kg  inulin in rats (for 200 mg/kg plasma only). |
 

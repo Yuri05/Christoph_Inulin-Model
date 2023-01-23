@@ -2,8 +2,8 @@
     "$schema": "https://github.com/Open-Systems-Pharmacology/QualificationPlan/releases/download/v3.0/OSP_Qualification_Plan_Schema.json",
     "Projects": [
         {
-            "Id": "Compound",
-            "Path": "../../Compound.json",
+            "Id": "Inulin",
+            "Path": "../../Inulin.json",
             "BuildingBlocks": [],
             "SimulationParameters": []
         }
@@ -14,15 +14,15 @@
             "GOFMergedPlotsPredictedVsObserved": [
                 {
                     "Type": "X",
-                    "Dimension": "Concentration (mass)",
-                    "Unit": "µg/l",
+                    "Dimension": "Concentration (molar)",
+                    "Unit": "µmol/l",
                     "GridLines": false,
                     "Scaling": "Log"
                 },
                 {
                     "Type": "Y",
-                    "Dimension": "Concentration (mass)",
-                    "Unit": "µg/l",
+                    "Dimension": "Concentration (molar)",
+                    "Unit": "µmol/l",
                     "GridLines": false,
                     "Scaling": "Log"
                 }
@@ -53,8 +53,8 @@
                 },
                 {
                     "Type": "Y",
-                    "Dimension": "Concentration (mass)",
-                    "Unit": "µg/l",
+                    "Dimension": "Concentration (molar)",
+                    "Unit": "µmol/l",
                     "GridLines": false,
                     "Scaling": "Log"
                 }
@@ -121,19 +121,19 @@
         },
         "AllPlots": [
             {
-                "Project": "Compound",
-                "Simulation": "Sim 1 - intravenous",
+                "Project": "Inulin",
+                "Simulation": "Inulin_200mgkg",
                 "SectionReference": "ct-profiles"
             },
             {
-                "Project": "Compound",
-                "Simulation": "Sim 2 - peroral",
+                "Project": "Inulin",
+                "Simulation": "Inulin_20mgkg",
                 "SectionReference": "ct-profiles"
             }
         ],
         "GOFMergedPlots": [
             {
-                "Title": "Goodness of fit plot for concentration in plasma",
+                "Title": "Goodness of fit plot for concentration in plasma and tissues",
                 "SectionReference": "diagnostics-plots",
                 "Artifacts": [
                     "Plot",
@@ -146,28 +146,77 @@
                 ],
                 "Groups": [
                     {
-                        "Caption": "Intravenous administration",
+                        "Caption": "Plasma concentrations (20 & 200 mg/kg dose)",
                         "Symbol": "Circle",
                         "OutputMappings": [
                             {
-                                "Project": "Compound",
-                                "Simulation": "Sim 1 - intravenous",
-                                "Output": "Organism|PeripheralVenousBlood|COMPOUND|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Observed data iv",
+                                "Project": "Inulin",
+                                "Simulation": "Inulin_20mgkg",
+                                "Output": "Organism|VenousBlood|Plasma|Inulin|Concentration in container",
+                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma20mgkg",
+                                "Color": "#FF0000"
+                            },
+                            {
+                                "Project": "Inulin",
+                                "Simulation": "Inulin_200mgkg",
+                                "Output": "Organism|VenousBlood|Plasma|Inulin|Concentration in container",
+                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma200mgkg",
                                 "Color": "#FF0000"
                             }
                         ]
                     },
                     {
-                        "Caption": "Oral administration",
+                        "Caption": "Tissue concentrations (20 mg/kg dose)",
                         "Symbol": "Square",
                         "OutputMappings": [
                             {
-                                "Project": "Compound",
-                                "Simulation": "Sim 2 - peroral",
-                                "Output": "Organism|PeripheralVenousBlood|COMPOUND|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "Observed data po",
-                                "Color": "#FF0000"
+                                "Project": "Inulin",
+                                "Simulation": "Inulin_20mgkg",
+                                "Output": "Organism|Lung|Inulin|Whole Organ",
+                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung",
+                                "Color": "#0000FF"
+                            },
+                            {
+                                "Project": "Inulin",
+                                "Simulation": "Inulin_20mgkg",
+                                "Output": "Organism|Muscle|Inulin|Whole Organ",
+                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle",
+                                "Color": "#800080"
+                            },
+                            {
+                                "Project": "Inulin",
+                                "Simulation": "Inulin_20mgkg",
+                                "Output": "Organism|Bone|Inulin|Whole Organ",
+                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone",
+                                "Color": "#0000C0"
+                            },
+                            {
+                                "Project": "Inulin",
+                                "Simulation": "Inulin_20mgkg",
+                                "Output": "Organism|Heart|Inulin|Whole Organ",
+                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart",
+                                "Color": "#FF8080"
+                            },
+                            {
+                                "Project": "Inulin",
+                                "Simulation": "Inulin_20mgkg",
+                                "Output": "Organism|Skin|Inulin|Whole Organ",
+                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin",
+                                "Color": "#FF00FF"
+                            },
+                            {
+                                "Project": "Inulin",
+                                "Simulation": "Inulin_20mgkg",
+                                "Output": "Organism|SmallIntestine|Inulin|Whole Organ (Small Intestine)",
+                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut",
+                                "Color": "#804040"
+                            },
+                            {
+                                "Project": "Inulin",
+                                "Simulation": "Inulin_20mgkg",
+                                "Output": "Organism|LargeIntestine|Inulin|Whole Organ (Large Intestine)",
+                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut",
+                                "Color": "#808080"
                             }
                         ]
                     }
@@ -180,15 +229,9 @@
     },
     "Inputs": [
         {
-            "Project": "Compound",
-            "Name": "COMPOUND",
+            "Project": "Inulin",
+            "Name": "Inulin",
             "Type": "Compound",
-            "SectionReference": "final-input-parameters"
-        },
-        {
-            "Project": "Compound",
-            "Name": "Tablet",
-            "Type": "Formulation",
             "SectionReference": "final-input-parameters"
         }
     ],

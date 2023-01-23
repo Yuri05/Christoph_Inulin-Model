@@ -1,5 +1,5 @@
-# COMPOUND-Model
-**_tbd._**
+# Inulin-Model
+Whole-body PBPK model of inulin in rats.
 
 ## Repository files
 **_tbd._**
