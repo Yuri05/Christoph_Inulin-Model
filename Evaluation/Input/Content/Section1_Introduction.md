@@ -4,5 +4,4 @@ Inulin has a considerably smaller solute radius than the proteins which had been
 
 The herein presented evaluation report evaluates the performance of the PBPK model for inulin in rats using the large molecule model in PK-Sim.
 
-The presented inulin PBPK model as well as the respective evaluation plan and evaluation report are provided open-source (https://github.com/.../Compound-model).
-
+The presented inulin PBPK model as well as the respective evaluation plan and evaluation report are provided open-source (https://github.com/Open-Systems-Pharmacology/Inulin-Model).

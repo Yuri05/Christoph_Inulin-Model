@@ -6,7 +6,7 @@
 
 | Version                                         | x.x-OSPy.y                                                   |
 | ----------------------------------------------- | ------------------------------------------------------------ |
-| based on *Model Snapshot* and *Evaluation Plan* | https://github.com/Open-Systems-Pharmacology/COMPOUND-Model/releases/tag/vx.x |
+| based on *Model Snapshot* and *Evaluation Plan* | https://github.com/Open-Systems-Pharmacology/Inulin-Model/releases/tag/vx.x |
 | OSP Version                                     | y.y                                                          |
 | Qualification Framework Version                 | z.z                                                          |
 
