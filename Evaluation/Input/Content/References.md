@@ -1,4 +1,4 @@
-**Dall' Acqua 2006** Dall’Acqua WF, Kiener PA, Wu H. Properties of human IgG1s engineered for enhanced binding to the neonatal Fc receptor (FcRn). J Biol Chem. 2006 Aug; 281(33):23514-23524. doi: 10.1074/jbc.M604292200.
+**Dall'Acqua 2006** Dall’Acqua WF, Kiener PA, Wu H. Properties of human IgG1s engineered for enhanced binding to the neonatal Fc receptor (FcRn). J Biol Chem. 2006 Aug; 281(33):23514-23524. doi: 10.1074/jbc.M604292200.
 
 **Dubbelboer 2022** Dubbelboer, I. R., Sjögren, E. Overview of authorized drug products for subcutaneous administration: Pharmaceutical, therapeutic, and physicochemical properties. European Journal of Pharmaceutical Sciences. 2022 Jun; 173:106181. doi.org/10.1016/j.ejps.2022.106181.
 
