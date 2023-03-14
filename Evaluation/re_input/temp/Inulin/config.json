@@ -1,0 +1,37 @@
+{
+  "Project": "Inulin",
+  "SnapshotFile": "C:\\SW-Dev\\00\\Christoph_Inulin-Model\\Evaluation\\input\\../../Inulin.json",
+  "OutputFolder": "C:/SW-Dev/00/Christoph_Inulin-Model/Evaluation/re_input",
+  "ObservedDataFolder": "C:/SW-Dev/00/Christoph_Inulin-Model/Evaluation/re_input\\ObservedData",
+  "InputsFolder": "C:/SW-Dev/00/Christoph_Inulin-Model/Evaluation/re_input\\Inputs",
+  "MappingFile": "C:/SW-Dev/00/Christoph_Inulin-Model/Evaluation/re_input\\temp\\Inulin\\mapping.json",
+  "TempFolder": "C:/SW-Dev/00/Christoph_Inulin-Model/Evaluation/re_input\\temp\\Inulin",
+  "ReportConfigurationFile": "C:/SW-Dev/00/Christoph_Inulin-Model/Evaluation/re_input\\report-configuration-plan.json",
+  "SimulationPlots": [
+    {
+      "Simulation": "Inulin_200mgkg",
+      "Project": "Inulin",
+      "SectionReference": "ct-profiles"
+    },
+    {
+      "Simulation": "Inulin_20mgkg",
+      "Project": "Inulin",
+      "SectionReference": "ct-profiles"
+    }
+  ],
+  "Inputs": [
+    {
+      "Type": "Compound",
+      "Name": "Inulin",
+      "Project": "Inulin",
+      "SectionReference": "final-input-parameters",
+      "SectionLevel": 3
+    }
+  ],
+  "BuildingBlocks": [],
+  "SimulationParameters": [],
+  "Simulations": [
+    "Inulin_200mgkg",
+    "Inulin_20mgkg"
+  ]
+}

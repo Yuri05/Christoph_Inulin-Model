@@ -1,0 +1,1081 @@
+{
+  "SimulationMappings": [
+    {
+      "Project": "Inulin",
+      "Simulation": "Inulin_200mgkg",
+      "Path": "Inulin/Inulin_200mgkg/",
+      "SimulationFile": "Inulin_200mgkg"
+    },
+    {
+      "Project": "Inulin",
+      "Simulation": "Inulin_20mgkg",
+      "Path": "Inulin/Inulin_20mgkg/",
+      "SimulationFile": "Inulin_20mgkg"
+    }
+  ],
+  "ObservedDataSets": [
+    {
+      "Id": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.200",
+      "Path": "ObservedData/Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.200.csv"
+    },
+    {
+      "Id": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung.20",
+      "Path": "ObservedData/Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung.20.csv"
+    },
+    {
+      "Id": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone.20",
+      "Path": "ObservedData/Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone.20.csv"
+    },
+    {
+      "Id": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle.20",
+      "Path": "ObservedData/Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle.20.csv"
+    },
+    {
+      "Id": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut.20",
+      "Path": "ObservedData/Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut.20.csv"
+    },
+    {
+      "Id": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart.20",
+      "Path": "ObservedData/Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart.20.csv"
+    },
+    {
+      "Id": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.20",
+      "Path": "ObservedData/Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.20.csv"
+    },
+    {
+      "Id": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin.20",
+      "Path": "ObservedData/Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin.20.csv"
+    }
+  ],
+  "Plots": {
+    "AxesSettings": {
+      "GOFMergedPlotsPredictedVsObserved": [
+        {
+          "Type": "X",
+          "Dimension": "Concentration (molar)",
+          "Unit": "µmol/l",
+          "GridLines": false,
+          "Scaling": "Log"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Concentration (molar)",
+          "Unit": "µmol/l",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ],
+      "GOFMergedPlotsResidualsOverTime": [
+        {
+          "Type": "X",
+          "Dimension": "Time",
+          "Unit": "h",
+          "GridLines": false,
+          "Scaling": "Linear"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Dimensionless",
+          "Unit": "",
+          "GridLines": false,
+          "Scaling": "Linear"
+        }
+      ],
+      "ComparisonTimeProfile": [
+        {
+          "Type": "X",
+          "Dimension": "Time",
+          "Unit": "h",
+          "GridLines": false,
+          "Scaling": "Linear"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Concentration (molar)",
+          "Unit": "µmol/l",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ],
+      "DDIRatioPlotsPredictedVsObserved": [
+        {
+          "Type": "X",
+          "Dimension": "Dimensionless",
+          "Unit": "",
+          "GridLines": false,
+          "Scaling": "Log"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Dimensionless",
+          "Unit": "",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ],
+      "DDIRatioPlotsResidualsVsObserved": [
+        {
+          "Type": "X",
+          "Dimension": "Dimensionless",
+          "Unit": "",
+          "GridLines": false,
+          "Scaling": "Log"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Dimensionless",
+          "Unit": "",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ],
+      "PKRatioPlots": [
+        {
+          "Type": "X",
+          "Dimension": "Age",
+          "Unit": "year(s)",
+          "GridLines": false,
+          "Scaling": "Linear"
+        },
+        {
+          "Type": "Y",
+          "Dimension": "Dimensionless",
+          "Unit": "",
+          "GridLines": false,
+          "Scaling": "Log"
+        }
+      ]
+    },
+    "PlotSettings": {
+      "ChartWidth": 500,
+      "ChartHeight": 400,
+      "Fonts": {
+        "AxisSize": 11,
+        "LegendSize": 9,
+        "OriginSize": 9,
+        "FontFamilyName": "Arial",
+        "WatermarkSize": 40
+      }
+    },
+    "GOFMergedPlots": [
+      {
+        "Title": "Goodness of fit plot for concentration in plasma and tissues",
+        "SectionReference": "diagnostics-plots",
+        "Artifacts": [
+          "Plot",
+          "GMFE",
+          "Measure"
+        ],
+        "PlotTypes": [
+          "predictedVsObserved",
+          "residualsOverTime"
+        ],
+        "Groups": [
+          {
+            "Caption": "Plasma concentrations (20 & 200 mg/kg dose)",
+            "Symbol": "Circle",
+            "OutputMappings": [
+              {
+                "Project": "Inulin",
+                "Simulation": "Inulin_20mgkg",
+                "Output": "Organism|VenousBlood|Plasma|Inulin|Concentration in container",
+                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.20",
+                "Color": "#FF0000"
+              },
+              {
+                "Project": "Inulin",
+                "Simulation": "Inulin_200mgkg",
+                "Output": "Organism|VenousBlood|Plasma|Inulin|Concentration in container",
+                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.200",
+                "Color": "#FF0000"
+              }
+            ]
+          },
+          {
+            "Caption": "Tissue concentrations (20 mg/kg dose)",
+            "Symbol": "Square",
+            "OutputMappings": [
+              {
+                "Project": "Inulin",
+                "Simulation": "Inulin_20mgkg",
+                "Output": "Organism|Lung|Inulin|Whole Organ",
+                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung.20",
+                "Color": "#0000FF"
+              },
+              {
+                "Project": "Inulin",
+                "Simulation": "Inulin_20mgkg",
+                "Output": "Organism|Muscle|Inulin|Whole Organ",
+                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle.20",
+                "Color": "#800080"
+              },
+              {
+                "Project": "Inulin",
+                "Simulation": "Inulin_20mgkg",
+                "Output": "Organism|Bone|Inulin|Whole Organ",
+                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone.20",
+                "Color": "#0000C0"
+              },
+              {
+                "Project": "Inulin",
+                "Simulation": "Inulin_20mgkg",
+                "Output": "Organism|Heart|Inulin|Whole Organ",
+                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart.20",
+                "Color": "#FF8080"
+              },
+              {
+                "Project": "Inulin",
+                "Simulation": "Inulin_20mgkg",
+                "Output": "Organism|Skin|Inulin|Whole Organ",
+                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin.20",
+                "Color": "#FF00FF"
+              },
+              {
+                "Project": "Inulin",
+                "Simulation": "Inulin_20mgkg",
+                "Output": "Organism|SmallIntestine|Inulin|Whole Organ (Small Intestine)",
+                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut.20",
+                "Color": "#804040"
+              },
+              {
+                "Project": "Inulin",
+                "Simulation": "Inulin_20mgkg",
+                "Output": "Organism|LargeIntestine|Inulin|Whole Organ (Large Intestine)",
+                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut.20",
+                "Color": "#808080"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "ComparisonTimeProfilePlots": [],
+    "DDIRatioPlots": [],
+    "PKRatioPlots": [],
+    "TimeProfile": [
+      {
+        "Project": "Inulin",
+        "Simulation": "Inulin_200mgkg",
+        "SectionReference": "ct-profiles",
+        "Plot": {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Inulin-Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Inulin_200mgkg|Organism|VenousBlood|Plasma|Inulin|Concentration in container",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Tsuji1983.VenousBlood.200-Inulin-VenousBlood-Plasma-Measurement",
+              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.200|Time",
+              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.200|ObservedData|VenousBlood|Plasma|Inulin|Measurement",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Plasma concentration (linear scale)",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Inulin\nInulin_200mgkg\n2023-03-07 11:22"
+        }
+      },
+      {
+        "Project": "Inulin",
+        "Simulation": "Inulin_200mgkg",
+        "SectionReference": "ct-profiles",
+        "Plot": {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Inulin-Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Inulin_200mgkg|Organism|VenousBlood|Plasma|Inulin|Concentration in container",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Tsuji1983.VenousBlood.200-Inulin-VenousBlood-Plasma-Measurement",
+              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.200|Time",
+              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.200|ObservedData|VenousBlood|Plasma|Inulin|Measurement",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Plasma concentration (log scale)",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Inulin\nInulin_200mgkg\n2023-03-07 11:22"
+        }
+      },
+      {
+        "Project": "Inulin",
+        "Simulation": "Inulin_20mgkg",
+        "SectionReference": "ct-profiles",
+        "Plot": {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Inulin-Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Inulin_20mgkg|Organism|VenousBlood|Plasma|Inulin|Concentration in container",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Tsuji1983.VenousBlood.20-Inulin-VenousBlood-Plasma-Measurement",
+              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.20|Time",
+              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.20|ObservedData|VenousBlood|Plasma|Inulin|Measurement",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 2,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Plasma  (linear scale)",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Inulin\nInulin_20mgkg\n2023-03-07 11:22"
+        }
+      },
+      {
+        "Project": "Inulin",
+        "Simulation": "Inulin_20mgkg",
+        "SectionReference": "ct-profiles",
+        "Plot": {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.1,
+              "Max": 60.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Tsuji1983.VenousBlood.20-Inulin-VenousBlood-Plasma-Measurement",
+              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.20|Time",
+              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.20|ObservedData|VenousBlood|Plasma|Inulin|Measurement",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 9,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Inulin-Venous Blood-Plasma-Concentration",
+              "X": "Time",
+              "Y": "Inulin_20mgkg|Organism|VenousBlood|Plasma|Inulin|Concentration in container",
+              "CurveOptions": {
+                "Color": "#FF0000",
+                "LegendIndex": 8
+              }
+            }
+          ],
+          "Name": "Plasma (log scale)",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Inulin\nInulin_20mgkg\n2023-03-07 11:22"
+        }
+      },
+      {
+        "Project": "Inulin",
+        "Simulation": "Inulin_20mgkg",
+        "SectionReference": "ct-profiles",
+        "Plot": {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.1,
+              "Max": 60.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Tsuji1983.Lung.20-Inulin-Lung-Tissue-Measurement",
+              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung.20|Time",
+              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung.20|ObservedData|Lung|Tissue|Inulin|Measurement",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 10,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Inulin-Lung-Whole Organ-Concentration",
+              "X": "Time",
+              "Y": "Inulin_20mgkg|Organism|Lung|Inulin|Whole Organ",
+              "CurveOptions": {
+                "Color": "#0000FF",
+                "LegendIndex": 9
+              }
+            }
+          ],
+          "Name": "Lung",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Inulin\nInulin_20mgkg\n2023-03-07 11:22"
+        }
+      },
+      {
+        "Project": "Inulin",
+        "Simulation": "Inulin_20mgkg",
+        "SectionReference": "ct-profiles",
+        "Plot": {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.1,
+              "Max": 60.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Inulin-Muscle-Whole Organ-Concentration",
+              "X": "Time",
+              "Y": "Inulin_20mgkg|Organism|Muscle|Inulin|Whole Organ",
+              "CurveOptions": {
+                "Color": "#800080",
+                "LegendIndex": 6
+              }
+            },
+            {
+              "Name": "Tsuji1983.Muscle.20-Inulin-Muscle-Tissue-Measurement",
+              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle.20|Time",
+              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle.20|ObservedData|Muscle|Tissue|Inulin|Measurement",
+              "CurveOptions": {
+                "Color": "#800080",
+                "LegendIndex": 7,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Muscle",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Inulin\nInulin_20mgkg\n2023-03-07 11:22"
+        }
+      },
+      {
+        "Project": "Inulin",
+        "Simulation": "Inulin_20mgkg",
+        "SectionReference": "ct-profiles",
+        "Plot": {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.1,
+              "Max": 60.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Inulin-Bone-Whole Organ-Concentration",
+              "X": "Time",
+              "Y": "Inulin_20mgkg|Organism|Bone|Inulin|Whole Organ",
+              "CurveOptions": {
+                "Color": "#0000C0",
+                "LegendIndex": 7
+              }
+            },
+            {
+              "Name": "Tsuji1983.Bone.20-Inulin-Bone-Tissue-Measurement",
+              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone.20|Time",
+              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone.20|ObservedData|Bone|Tissue|Inulin|Measurement",
+              "CurveOptions": {
+                "Color": "#0000C0",
+                "LegendIndex": 8,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Bone",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Inulin\nInulin_20mgkg\n2023-03-07 11:22"
+        }
+      },
+      {
+        "Project": "Inulin",
+        "Simulation": "Inulin_20mgkg",
+        "SectionReference": "ct-profiles",
+        "Plot": {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.1,
+              "Max": 60.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Tsuji1983.Heart.20-Inulin-Heart-Tissue-Measurement",
+              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart.20|Time",
+              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart.20|ObservedData|Heart|Tissue|Inulin|Measurement",
+              "CurveOptions": {
+                "Color": "#FF8080",
+                "LegendIndex": 11,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Inulin-Heart-Whole Organ-Concentration",
+              "X": "Time",
+              "Y": "Inulin_20mgkg|Organism|Heart|Inulin|Whole Organ",
+              "CurveOptions": {
+                "Color": "#FF8080",
+                "LegendIndex": 10
+              }
+            }
+          ],
+          "Name": "Heart",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Inulin\nInulin_20mgkg\n2023-03-07 11:22"
+        }
+      },
+      {
+        "Project": "Inulin",
+        "Simulation": "Inulin_20mgkg",
+        "SectionReference": "ct-profiles",
+        "Plot": {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (mass)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.1,
+              "Max": 60.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Inulin-Skin-Whole Organ-Concentration",
+              "X": "Time",
+              "Y": "Inulin_20mgkg|Organism|Skin|Inulin|Whole Organ",
+              "CurveOptions": {
+                "Color": "#FF00FF",
+                "LegendIndex": 2
+              }
+            },
+            {
+              "Name": "Tsuji1983.Skin.20-Inulin-Skin-Tissue-Measurement",
+              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin.20|Time",
+              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin.20|ObservedData|Skin|Tissue|Inulin|Measurement",
+              "CurveOptions": {
+                "Color": "#FF00FF",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            }
+          ],
+          "Name": "Skin",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Inulin\nInulin_20mgkg\n2023-03-07 11:22"
+        }
+      },
+      {
+        "Project": "Inulin",
+        "Simulation": "Inulin_20mgkg",
+        "SectionReference": "ct-profiles",
+        "Plot": {
+          "Axes": [
+            {
+              "Unit": "h",
+              "Dimension": "Time",
+              "Type": "X",
+              "GridLines": false,
+              "Visible": true,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "None",
+              "Scaling": "Linear",
+              "NumberMode": "Normal"
+            },
+            {
+              "Unit": "µmol/l",
+              "Dimension": "Concentration (molar)",
+              "Type": "Y",
+              "GridLines": false,
+              "Visible": true,
+              "Min": 0.1,
+              "Max": 60.0,
+              "DefaultColor": "#FFFFFF",
+              "DefaultLineStyle": "Solid",
+              "Scaling": "Log",
+              "NumberMode": "Normal"
+            }
+          ],
+          "Curves": [
+            {
+              "Name": "Tsuji1983.Gut.20-Inulin-Gut-Tissue-Measurement",
+              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut.20|Time",
+              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut.20|ObservedData|Gut|Tissue|Inulin|Measurement",
+              "CurveOptions": {
+                "Color": "#804040",
+                "LegendIndex": 3,
+                "LineStyle": "None",
+                "Symbol": "Circle"
+              }
+            },
+            {
+              "Name": "Inulin-Small Intestine-Whole Organ-Concentration",
+              "X": "Time",
+              "Y": "Inulin_20mgkg|Organism|SmallIntestine|Inulin|Whole Organ (Small Intestine)",
+              "CurveOptions": {
+                "Color": "#804040",
+                "LegendIndex": 1
+              }
+            },
+            {
+              "Name": "Inulin-Large Intestine-Whole Organ-Concentration",
+              "X": "Time",
+              "Y": "Inulin_20mgkg|Organism|LargeIntestine|Inulin|Whole Organ (Large Intestine)",
+              "CurveOptions": {
+                "Color": "#808080",
+                "LegendIndex": 2
+              }
+            }
+          ],
+          "Name": "Gut",
+          "FontAndSize": {
+            "Fonts": {
+              "AxisSize": 10,
+              "LegendSize": 8,
+              "TitleSize": 16,
+              "DescriptionSize": 12,
+              "OriginSize": 8,
+              "FontFamilyName": "Microsoft Sans Serif",
+              "WatermarkSize": 32
+            }
+          },
+          "Settings": {
+            "SideMarginsEnabled": true,
+            "LegendPosition": "RightInside",
+            "BackColor": "#00FFFFFF",
+            "DiagramBackColor": "#FFFFFF"
+          },
+          "OriginText": "Inulin\nInulin_20mgkg\n2023-03-07 11:22"
+        }
+      }
+    ]
+  },
+  "Inputs": [
+    {
+      "SectionReference": "final-input-parameters",
+      "Path": "Inputs/Inulin/Compound/Inulin.md"
+    }
+  ],
+  "Sections": [
+    {
+      "Reference": "introduction",
+      "Title": "Introduction",
+      "Content": "Content/Section1_Introduction.md",
+      "Sections": []
+    },
+    {
+      "Reference": "methods",
+      "Title": "Methods",
+      "Sections": [
+        {
+          "Reference": "modeling-strategy",
+          "Title": "Modeling Strategy",
+          "Content": "Content/Section2.1_Modeling_Strategy.md",
+          "Sections": []
+        },
+        {
+          "Reference": "methods-data",
+          "Title": "Data",
+          "Content": "Content/Section2.2_Data.md",
+          "Sections": []
+        },
+        {
+          "Reference": "model-parameters-and-assumptions",
+          "Title": "Model Parameters and Assumptions",
+          "Content": "Content/Section2.3_Model_Parameters_and_Assumptions.md",
+          "Sections": []
+        }
+      ]
+    },
+    {
+      "Reference": "results-and-discussion",
+      "Title": "Results and Discussion",
+      "Content": "Content/Section3_Results_and_Discussion.md",
+      "Sections": [
+        {
+          "Reference": "final-input-parameters",
+          "Title": "Final input parameters",
+          "Content": "Content/Input_table.md",
+          "Sections": []
+        },
+        {
+          "Reference": "diagnostics-plots",
+          "Title": "Diagnostics Plots",
+          "Content": "Content/GOF_diagnostics.md",
+          "Sections": []
+        },
+        {
+          "Reference": "ct-profiles",
+          "Title": "Concentration-Time Profiles",
+          "Content": "Content/Concentration_time_profiles.md",
+          "Sections": []
+        }
+      ]
+    },
+    {
+      "Reference": "conclusion",
+      "Title": "Conclusion",
+      "Content": "Content/Conclusion.md",
+      "Sections": []
+    },
+    {
+      "Reference": "main-references",
+      "Title": "References",
+      "Content": "Content/References.md",
+      "Sections": []
+    }
+  ],
+  "Intro": [
+    {
+      "Path": "Intro/titlepage.md"
+    }
+  ]
+}
