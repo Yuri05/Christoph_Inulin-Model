@@ -153,14 +153,14 @@
                                 "Project": "Inulin",
                                 "Simulation": "Inulin_20mgkg",
                                 "Output": "Organism|VenousBlood|Plasma|Inulin|Concentration in container",
-                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma20mgkg",
+                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.20",
                                 "Color": "#FF0000"
                             },
                             {
                                 "Project": "Inulin",
                                 "Simulation": "Inulin_200mgkg",
                                 "Output": "Organism|VenousBlood|Plasma|Inulin|Concentration in container",
-                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma200mgkg",
+                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.200",
                                 "Color": "#FF0000"
                             }
                         ]
@@ -173,49 +173,49 @@
                                 "Project": "Inulin",
                                 "Simulation": "Inulin_20mgkg",
                                 "Output": "Organism|Lung|Inulin|Whole Organ",
-                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung",
+                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung.20",
                                 "Color": "#0000FF"
                             },
                             {
                                 "Project": "Inulin",
                                 "Simulation": "Inulin_20mgkg",
                                 "Output": "Organism|Muscle|Inulin|Whole Organ",
-                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle",
+                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle.20",
                                 "Color": "#800080"
                             },
                             {
                                 "Project": "Inulin",
                                 "Simulation": "Inulin_20mgkg",
                                 "Output": "Organism|Bone|Inulin|Whole Organ",
-                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone",
+                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone.20",
                                 "Color": "#0000C0"
                             },
                             {
                                 "Project": "Inulin",
                                 "Simulation": "Inulin_20mgkg",
                                 "Output": "Organism|Heart|Inulin|Whole Organ",
-                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart",
+                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart.20",
                                 "Color": "#FF8080"
                             },
                             {
                                 "Project": "Inulin",
                                 "Simulation": "Inulin_20mgkg",
                                 "Output": "Organism|Skin|Inulin|Whole Organ",
-                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin",
+                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin.20",
                                 "Color": "#FF00FF"
                             },
                             {
                                 "Project": "Inulin",
                                 "Simulation": "Inulin_20mgkg",
                                 "Output": "Organism|SmallIntestine|Inulin|Whole Organ (Small Intestine)",
-                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut",
+                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut.20",
                                 "Color": "#804040"
                             },
                             {
                                 "Project": "Inulin",
                                 "Simulation": "Inulin_20mgkg",
                                 "Output": "Organism|LargeIntestine|Inulin|Whole Organ (Large Intestine)",
-                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut",
+                                "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut.20",
                                 "Color": "#808080"
                             }
                         ]

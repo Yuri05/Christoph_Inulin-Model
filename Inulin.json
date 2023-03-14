@@ -384,13 +384,13 @@
       "Name": "Inulin_20mgkg",
       "Model": "TwoPores",
       "ObservedData": [
-        "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma20mgkg",
-        "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung",
-        "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle",
-        "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone",
-        "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart",
-        "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin",
-        "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut"
+        "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung.20",
+        "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone.20",
+        "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle.20",
+        "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut.20",
+        "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart.20",
+        "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.20",
+        "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin.20"
       ],
       "Solver": {},
       "OutputSchema": [
@@ -438,6 +438,38 @@
         "Organism|SmallIntestine|Inulin|Whole Organ (Small Intestine) incl. FcRn_Complex-Inulin",
         "Organism|LargeIntestine|Inulin|Whole Organ (Large Intestine)",
         "Organism|LargeIntestine|Inulin|Whole Organ (Large Intestine) incl. FcRn_Complex-Inulin"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Inulin_20mgkg|Organism|VenousBlood|Plasma|Inulin|Concentration in container",
+          "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.20"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "Inulin_20mgkg|Organism|Bone|Inulin|Whole Organ",
+          "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone.20"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "Inulin_20mgkg|Organism|Heart|Inulin|Whole Organ",
+          "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart.20"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "Inulin_20mgkg|Organism|Lung|Inulin|Whole Organ",
+          "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung.20"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "Inulin_20mgkg|Organism|Muscle|Inulin|Whole Organ",
+          "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle.20"
+        },
+        {
+          "Scaling": "Log",
+          "Path": "Inulin_20mgkg|Organism|Skin|Inulin|Whole Organ",
+          "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin.20"
+        }
       ],
       "Individual": "Rat",
       "Compounds": [
@@ -496,9 +528,9 @@
               }
             },
             {
-              "Name": "Tsuji1983 Plasma 20 mg/kg-Measurement",
-              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma20mgkg|Time",
-              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma20mgkg|ObservedData|||Inulin|Measurement",
+              "Name": "Tsuji1983.VenousBlood.20-Inulin-VenousBlood-Plasma-Measurement",
+              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.20|Time",
+              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.20|ObservedData|VenousBlood|Plasma|Inulin|Measurement",
               "CurveOptions": {
                 "Color": "#FF0000",
                 "LegendIndex": 2,
@@ -556,9 +588,9 @@
           ],
           "Curves": [
             {
-              "Name": "Tsuji1983 Plasma 20 mg/kg-Measurement",
-              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma20mgkg|Time",
-              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma20mgkg|ObservedData|||Inulin|Measurement",
+              "Name": "Tsuji1983.VenousBlood.20-Inulin-VenousBlood-Plasma-Measurement",
+              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.20|Time",
+              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.20|ObservedData|VenousBlood|Plasma|Inulin|Measurement",
               "CurveOptions": {
                 "Color": "#FF0000",
                 "LegendIndex": 9,
@@ -625,9 +657,9 @@
           ],
           "Curves": [
             {
-              "Name": "Tsuji1983 Lung-Measurement",
-              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung|Time",
-              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung|ObservedData|||Inulin|Measurement",
+              "Name": "Tsuji1983.Lung.20-Inulin-Lung-Tissue-Measurement",
+              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung.20|Time",
+              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung.20|ObservedData|Lung|Tissue|Inulin|Measurement",
               "CurveOptions": {
                 "Color": "#0000FF",
                 "LegendIndex": 10,
@@ -703,9 +735,9 @@
               }
             },
             {
-              "Name": "Tsuji1983 Muscle-Measurement",
-              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle|Time",
-              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle|ObservedData|||Inulin|Measurement",
+              "Name": "Tsuji1983.Muscle.20-Inulin-Muscle-Tissue-Measurement",
+              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle.20|Time",
+              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle.20|ObservedData|Muscle|Tissue|Inulin|Measurement",
               "CurveOptions": {
                 "Color": "#800080",
                 "LegendIndex": 7,
@@ -772,9 +804,9 @@
               }
             },
             {
-              "Name": "Tsuji1983 Bone-Measurement",
-              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone|Time",
-              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone|ObservedData|||Inulin|Measurement",
+              "Name": "Tsuji1983.Bone.20-Inulin-Bone-Tissue-Measurement",
+              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone.20|Time",
+              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone.20|ObservedData|Bone|Tissue|Inulin|Measurement",
               "CurveOptions": {
                 "Color": "#0000C0",
                 "LegendIndex": 8,
@@ -832,9 +864,9 @@
           ],
           "Curves": [
             {
-              "Name": "Tsuji1983 Heart-Measurement",
-              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart|Time",
-              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart|ObservedData|||Inulin|Measurement",
+              "Name": "Tsuji1983.Heart.20-Inulin-Heart-Tissue-Measurement",
+              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart.20|Time",
+              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart.20|ObservedData|Heart|Tissue|Inulin|Measurement",
               "CurveOptions": {
                 "Color": "#FF8080",
                 "LegendIndex": 11,
@@ -910,9 +942,9 @@
               }
             },
             {
-              "Name": "Tsuji1983 Skin-Measurement",
-              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin|Time",
-              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin|ObservedData|||Inulin|Measurement",
+              "Name": "Tsuji1983.Skin.20-Inulin-Skin-Tissue-Measurement",
+              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin.20|Time",
+              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin.20|ObservedData|Skin|Tissue|Inulin|Measurement",
               "CurveOptions": {
                 "Color": "#FF00FF",
                 "LegendIndex": 3,
@@ -970,9 +1002,9 @@
           ],
           "Curves": [
             {
-              "Name": "Tsuji1983 Gut-Measurement",
-              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut|Time",
-              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut|ObservedData|||Inulin|Measurement",
+              "Name": "Tsuji1983.Gut.20-Inulin-Gut-Tissue-Measurement",
+              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut.20|Time",
+              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut.20|ObservedData|Gut|Tissue|Inulin|Measurement",
               "CurveOptions": {
                 "Color": "#804040",
                 "LegendIndex": 3,
@@ -1025,7 +1057,7 @@
       "Name": "Inulin_200mgkg",
       "Model": "TwoPores",
       "ObservedData": [
-        "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma200mgkg"
+        "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.200"
       ],
       "Solver": {},
       "OutputSchema": [
@@ -1064,6 +1096,13 @@
       ],
       "OutputSelections": [
         "Organism|VenousBlood|Plasma|Inulin|Concentration in container"
+      ],
+      "OutputMappings": [
+        {
+          "Scaling": "Log",
+          "Path": "Inulin_200mgkg|Organism|VenousBlood|Plasma|Inulin|Concentration in container",
+          "ObservedData": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.200"
+        }
       ],
       "Individual": "Rat",
       "Compounds": [
@@ -1122,9 +1161,9 @@
               }
             },
             {
-              "Name": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma200mgkg-Inulin-Measurement",
-              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma200mgkg|Time",
-              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma200mgkg|ObservedData|||Inulin|Measurement",
+              "Name": "Tsuji1983.VenousBlood.200-Inulin-VenousBlood-Plasma-Measurement",
+              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.200|Time",
+              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.200|ObservedData|VenousBlood|Plasma|Inulin|Measurement",
               "CurveOptions": {
                 "Color": "#FF0000",
                 "LegendIndex": 2,
@@ -1189,9 +1228,9 @@
               }
             },
             {
-              "Name": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma200mgkg-Inulin-Measurement",
-              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma200mgkg|Time",
-              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma200mgkg|ObservedData|||Inulin|Measurement",
+              "Name": "Tsuji1983.VenousBlood.200-Inulin-VenousBlood-Plasma-Measurement",
+              "X": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.200|Time",
+              "Y": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.200|ObservedData|VenousBlood|Plasma|Inulin|Measurement",
               "CurveOptions": {
                 "Color": "#FF0000",
                 "LegendIndex": 2,
@@ -1225,19 +1264,31 @@
   ],
   "ObservedData": [
     {
-      "Name": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma20mgkg",
+      "Name": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.200",
       "ExtendedProperties": [
         {
           "Name": "Sheet",
           "Value": "Data"
         },
         {
+          "Name": "Organ",
+          "Value": "VenousBlood"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma"
+        },
+        {
           "Name": "Molecule",
           "Value": "Inulin"
         },
         {
-          "Name": "Data",
-          "Value": "Plasma20mgkg"
+          "Name": "Species",
+          "Value": "Rat"
+        },
+        {
+          "Name": "Dose_mgKg",
+          "Value": "200"
         }
       ],
       "Columns": [
@@ -1247,106 +1298,7 @@
             {
               "Name": "Error",
               "QuantityInfo": {
-                "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma20mgkg|ObservedData|||Inulin|Error"
-              },
-              "DataInfo": {
-                "Origin": "ObservationAuxiliary",
-                "AuxiliaryType": "ArithmeticStdDev",
-                "MolWeight": 5500.0
-              },
-              "Values": [
-                38.274292,
-                23.46342,
-                18.2909489,
-                11.42914,
-                9.718702,
-                7.494007,
-                3.90983987,
-                4.315693,
-                1.745024,
-                1.572008,
-                0.8398619
-              ],
-              "Dimension": "Concentration (mass)",
-              "Unit": "µg/ml"
-            }
-          ],
-          "QuantityInfo": {
-            "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma20mgkg|ObservedData|||Inulin|Measurement"
-          },
-          "DataInfo": {
-            "Origin": "Observation",
-            "AuxiliaryType": "Undefined",
-            "MolWeight": 5500.0
-          },
-          "Values": [
-            294.3059,
-            180.4555,
-            94.95115,
-            49.95295,
-            30.60525,
-            26.2456989,
-            17.0873013,
-            12.76478,
-            5.012314,
-            3.161005,
-            1.870406
-          ],
-          "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
-        }
-      ],
-      "BaseGrid": {
-        "Name": "Time",
-        "QuantityInfo": {
-          "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma20mgkg|Time",
-          "Type": "Time"
-        },
-        "DataInfo": {
-          "Origin": "BaseGrid",
-          "AuxiliaryType": "Undefined"
-        },
-        "Values": [
-          0.0134128164,
-          0.0312965661,
-          0.0804769,
-          0.1609538,
-          0.3308495,
-          0.496274143,
-          0.7421758,
-          0.9925485,
-          1.49329364,
-          1.98956835,
-          2.99553
-        ],
-        "Dimension": "Time",
-        "Unit": "h"
-      }
-    },
-    {
-      "Name": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma200mgkg",
-      "ExtendedProperties": [
-        {
-          "Name": "Sheet",
-          "Value": "Data"
-        },
-        {
-          "Name": "Molecule",
-          "Value": "Inulin"
-        },
-        {
-          "Name": "Data",
-          "Value": "Plasma200mgkg"
-        }
-      ],
-      "Columns": [
-        {
-          "Name": "Measurement",
-          "RelatedColumns": [
-            {
-              "Name": "Error",
-              "QuantityInfo": {
-                "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma200mgkg|ObservedData|||Inulin|Error"
+                "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.200|ObservedData|VenousBlood|Plasma|Inulin|Error"
               },
               "DataInfo": {
                 "Origin": "ObservationAuxiliary",
@@ -1371,7 +1323,7 @@
             }
           ],
           "QuantityInfo": {
-            "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma200mgkg|ObservedData|||Inulin|Measurement"
+            "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.200|ObservedData|VenousBlood|Plasma|Inulin|Measurement"
           },
           "DataInfo": {
             "Origin": "Observation",
@@ -1398,7 +1350,7 @@
       "BaseGrid": {
         "Name": "Time",
         "QuantityInfo": {
-          "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Plasma200mgkg|Time",
+          "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.200|Time",
           "Type": "Time"
         },
         "DataInfo": {
@@ -1423,19 +1375,31 @@
       }
     },
     {
-      "Name": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung",
+      "Name": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung.20",
       "ExtendedProperties": [
         {
           "Name": "Sheet",
           "Value": "Data"
         },
         {
+          "Name": "Organ",
+          "Value": "Lung"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Tissue"
+        },
+        {
           "Name": "Molecule",
           "Value": "Inulin"
         },
         {
-          "Name": "Data",
-          "Value": "Lung"
+          "Name": "Species",
+          "Value": "Rat"
+        },
+        {
+          "Name": "Dose_mgKg",
+          "Value": "20"
         }
       ],
       "Columns": [
@@ -1445,7 +1409,7 @@
             {
               "Name": "Error",
               "QuantityInfo": {
-                "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung|ObservedData|||Inulin|Error"
+                "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung.20|ObservedData|Lung|Tissue|Inulin|Error"
               },
               "DataInfo": {
                 "Origin": "ObservationAuxiliary",
@@ -1463,7 +1427,7 @@
             }
           ],
           "QuantityInfo": {
-            "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung|ObservedData|||Inulin|Measurement"
+            "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung.20|ObservedData|Lung|Tissue|Inulin|Measurement"
           },
           "DataInfo": {
             "Origin": "Observation",
@@ -1483,7 +1447,7 @@
       "BaseGrid": {
         "Name": "Time",
         "QuantityInfo": {
-          "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung|Time",
+          "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Lung.20|Time",
           "Type": "Time"
         },
         "DataInfo": {
@@ -1501,97 +1465,31 @@
       }
     },
     {
-      "Name": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle",
+      "Name": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone.20",
       "ExtendedProperties": [
         {
           "Name": "Sheet",
           "Value": "Data"
         },
         {
-          "Name": "Molecule",
-          "Value": "Inulin"
-        },
-        {
-          "Name": "Data",
-          "Value": "Muscle"
-        }
-      ],
-      "Columns": [
-        {
-          "Name": "Measurement",
-          "RelatedColumns": [
-            {
-              "Name": "Error",
-              "QuantityInfo": {
-                "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle|ObservedData|||Inulin|Error"
-              },
-              "DataInfo": {
-                "Origin": "ObservationAuxiliary",
-                "AuxiliaryType": "ArithmeticStdDev",
-                "MolWeight": 5500.0
-              },
-              "Values": [
-                1.82027,
-                0.7995584,
-                0.3212802,
-                0.240385592
-              ],
-              "Dimension": "Concentration (mass)",
-              "Unit": "µg/ml"
-            }
-          ],
-          "QuantityInfo": {
-            "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle|ObservedData|||Inulin|Measurement"
-          },
-          "DataInfo": {
-            "Origin": "Observation",
-            "AuxiliaryType": "Undefined",
-            "MolWeight": 5500.0
-          },
-          "Values": [
-            7.14265776,
-            3.700332,
-            2.14512014,
-            0.6447858
-          ],
-          "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
-        }
-      ],
-      "BaseGrid": {
-        "Name": "Time",
-        "QuantityInfo": {
-          "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle|Time",
-          "Type": "Time"
-        },
-        "DataInfo": {
-          "Origin": "BaseGrid",
-          "AuxiliaryType": "Undefined"
-        },
-        "Values": [
-          0.160000011,
-          0.48888883,
-          0.9866667,
-          1.9822216
-        ],
-        "Dimension": "Time",
-        "Unit": "h"
-      }
-    },
-    {
-      "Name": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone",
-      "ExtendedProperties": [
-        {
-          "Name": "Sheet",
-          "Value": "Data"
-        },
-        {
-          "Name": "Molecule",
-          "Value": "Inulin"
-        },
-        {
-          "Name": "Data",
+          "Name": "Organ",
           "Value": "Bone"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Tissue"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Inulin"
+        },
+        {
+          "Name": "Species",
+          "Value": "Rat"
+        },
+        {
+          "Name": "Dose_mgKg",
+          "Value": "20"
         }
       ],
       "Columns": [
@@ -1601,7 +1499,7 @@
             {
               "Name": "Error",
               "QuantityInfo": {
-                "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone|ObservedData|||Inulin|Error"
+                "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone.20|ObservedData|Bone|Tissue|Inulin|Error"
               },
               "DataInfo": {
                 "Origin": "ObservationAuxiliary",
@@ -1619,7 +1517,7 @@
             }
           ],
           "QuantityInfo": {
-            "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone|ObservedData|||Inulin|Measurement"
+            "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone.20|ObservedData|Bone|Tissue|Inulin|Measurement"
           },
           "DataInfo": {
             "Origin": "Observation",
@@ -1639,7 +1537,7 @@
       "BaseGrid": {
         "Name": "Time",
         "QuantityInfo": {
-          "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone|Time",
+          "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Bone.20|Time",
           "Type": "Time"
         },
         "DataInfo": {
@@ -1657,19 +1555,31 @@
       }
     },
     {
-      "Name": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart",
+      "Name": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle.20",
       "ExtendedProperties": [
         {
           "Name": "Sheet",
           "Value": "Data"
         },
         {
+          "Name": "Organ",
+          "Value": "Muscle"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Tissue"
+        },
+        {
           "Name": "Molecule",
           "Value": "Inulin"
         },
         {
-          "Name": "Data",
-          "Value": "Heart"
+          "Name": "Species",
+          "Value": "Rat"
+        },
+        {
+          "Name": "Dose_mgKg",
+          "Value": "20"
         }
       ],
       "Columns": [
@@ -1679,7 +1589,7 @@
             {
               "Name": "Error",
               "QuantityInfo": {
-                "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart|ObservedData|||Inulin|Error"
+                "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle.20|ObservedData|Muscle|Tissue|Inulin|Error"
               },
               "DataInfo": {
                 "Origin": "ObservationAuxiliary",
@@ -1687,17 +1597,17 @@
                 "MolWeight": 5500.0
               },
               "Values": [
-                1.653185,
-                0.403811485,
-                0.5378056,
-                0.1505991
+                1.82027,
+                0.7995584,
+                0.3212802,
+                0.240385592
               ],
               "Dimension": "Concentration (mass)",
               "Unit": "µg/ml"
             }
           ],
           "QuantityInfo": {
-            "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart|ObservedData|||Inulin|Measurement"
+            "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle.20|ObservedData|Muscle|Tissue|Inulin|Measurement"
           },
           "DataInfo": {
             "Origin": "Observation",
@@ -1705,10 +1615,10 @@
             "MolWeight": 5500.0
           },
           "Values": [
-            9.223828,
-            2.252691,
-            1.9151901,
-            0.5096804
+            7.14265776,
+            3.700332,
+            2.14512014,
+            0.6447858
           ],
           "Dimension": "Concentration (mass)",
           "Unit": "mg/l"
@@ -1717,7 +1627,7 @@
       "BaseGrid": {
         "Name": "Time",
         "QuantityInfo": {
-          "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart|Time",
+          "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Muscle.20|Time",
           "Type": "Time"
         },
         "DataInfo": {
@@ -1725,107 +1635,41 @@
           "AuxiliaryType": "Undefined"
         },
         "Values": [
-          0.148648649,
-          0.490991,
-          0.981982,
-          1.995495
+          0.160000011,
+          0.48888883,
+          0.9866667,
+          1.9822216
         ],
         "Dimension": "Time",
         "Unit": "h"
       }
     },
     {
-      "Name": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin",
+      "Name": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut.20",
       "ExtendedProperties": [
         {
           "Name": "Sheet",
           "Value": "Data"
         },
         {
-          "Name": "Molecule",
-          "Value": "Inulin"
-        },
-        {
-          "Name": "Data",
-          "Value": "Skin"
-        }
-      ],
-      "Columns": [
-        {
-          "Name": "Measurement",
-          "RelatedColumns": [
-            {
-              "Name": "Error",
-              "QuantityInfo": {
-                "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin|ObservedData|||Inulin|Error"
-              },
-              "DataInfo": {
-                "Origin": "ObservationAuxiliary",
-                "AuxiliaryType": "ArithmeticStdDev",
-                "MolWeight": 5500.0
-              },
-              "Values": [
-                2.692123,
-                1.588902,
-                1.896984,
-                0.490139723
-              ],
-              "Dimension": "Concentration (mass)",
-              "Unit": "µg/ml"
-            }
-          ],
-          "QuantityInfo": {
-            "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin|ObservedData|||Inulin|Measurement"
-          },
-          "DataInfo": {
-            "Origin": "Observation",
-            "AuxiliaryType": "Undefined",
-            "MolWeight": 5500.0
-          },
-          "Values": [
-            17.790041,
-            9.931403,
-            6.606544,
-            2.332633
-          ],
-          "Dimension": "Concentration (mass)",
-          "Unit": "mg/l"
-        }
-      ],
-      "BaseGrid": {
-        "Name": "Time",
-        "QuantityInfo": {
-          "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin|Time",
-          "Type": "Time"
-        },
-        "DataInfo": {
-          "Origin": "BaseGrid",
-          "AuxiliaryType": "Undefined"
-        },
-        "Values": [
-          0.160555124,
-          0.4888815,
-          0.999599159,
-          1.99415
-        ],
-        "Dimension": "Time",
-        "Unit": "h"
-      }
-    },
-    {
-      "Name": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut",
-      "ExtendedProperties": [
-        {
-          "Name": "Sheet",
-          "Value": "Data"
-        },
-        {
-          "Name": "Molecule",
-          "Value": "Inulin"
-        },
-        {
-          "Name": "Data",
+          "Name": "Organ",
           "Value": "Gut"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Tissue"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Inulin"
+        },
+        {
+          "Name": "Species",
+          "Value": "Rat"
+        },
+        {
+          "Name": "Dose_mgKg",
+          "Value": "20"
         }
       ],
       "Columns": [
@@ -1835,7 +1679,7 @@
             {
               "Name": "Error",
               "QuantityInfo": {
-                "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut|ObservedData|||Inulin|Error"
+                "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut.20|ObservedData|Gut|Tissue|Inulin|Error"
               },
               "DataInfo": {
                 "Origin": "ObservationAuxiliary",
@@ -1853,7 +1697,7 @@
             }
           ],
           "QuantityInfo": {
-            "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut|ObservedData|||Inulin|Measurement"
+            "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut.20|ObservedData|Gut|Tissue|Inulin|Measurement"
           },
           "DataInfo": {
             "Origin": "Observation",
@@ -1873,7 +1717,7 @@
       "BaseGrid": {
         "Name": "Time",
         "QuantityInfo": {
-          "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut|Time",
+          "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Gut.20|Time",
           "Type": "Time"
         },
         "DataInfo": {
@@ -1885,6 +1729,297 @@
           0.48888883,
           0.973333359,
           1.97777832
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart.20",
+      "ExtendedProperties": [
+        {
+          "Name": "Sheet",
+          "Value": "Data"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Heart"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Tissue"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Inulin"
+        },
+        {
+          "Name": "Species",
+          "Value": "Rat"
+        },
+        {
+          "Name": "Dose_mgKg",
+          "Value": "20"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Measurement",
+          "RelatedColumns": [
+            {
+              "Name": "Error",
+              "QuantityInfo": {
+                "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart.20|ObservedData|Heart|Tissue|Inulin|Error"
+              },
+              "DataInfo": {
+                "Origin": "ObservationAuxiliary",
+                "AuxiliaryType": "ArithmeticStdDev",
+                "MolWeight": 5500.0
+              },
+              "Values": [
+                1.653185,
+                0.403811485,
+                0.5378056,
+                0.1505991
+              ],
+              "Dimension": "Concentration (mass)",
+              "Unit": "µg/ml"
+            }
+          ],
+          "QuantityInfo": {
+            "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart.20|ObservedData|Heart|Tissue|Inulin|Measurement"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 5500.0
+          },
+          "Values": [
+            9.223828,
+            2.252691,
+            1.9151901,
+            0.5096804
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Heart.20|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          0.148648649,
+          0.490991,
+          0.981982,
+          1.995495
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.20",
+      "ExtendedProperties": [
+        {
+          "Name": "Sheet",
+          "Value": "Data"
+        },
+        {
+          "Name": "Organ",
+          "Value": "VenousBlood"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Plasma"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Inulin"
+        },
+        {
+          "Name": "Species",
+          "Value": "Rat"
+        },
+        {
+          "Name": "Dose_mgKg",
+          "Value": "20"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Measurement",
+          "RelatedColumns": [
+            {
+              "Name": "Error",
+              "QuantityInfo": {
+                "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.20|ObservedData|VenousBlood|Plasma|Inulin|Error"
+              },
+              "DataInfo": {
+                "Origin": "ObservationAuxiliary",
+                "AuxiliaryType": "ArithmeticStdDev",
+                "MolWeight": 5500.0
+              },
+              "Values": [
+                38.274292,
+                23.46342,
+                18.2909489,
+                11.42914,
+                9.718702,
+                7.494007,
+                3.90983987,
+                4.315693,
+                1.745024,
+                1.572008,
+                0.8398619
+              ],
+              "Dimension": "Concentration (mass)",
+              "Unit": "µg/ml"
+            }
+          ],
+          "QuantityInfo": {
+            "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.20|ObservedData|VenousBlood|Plasma|Inulin|Measurement"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 5500.0
+          },
+          "Values": [
+            294.3059,
+            180.4555,
+            94.95115,
+            49.95295,
+            30.60525,
+            26.2456989,
+            17.0873013,
+            12.76478,
+            5.012314,
+            3.161005,
+            1.870406
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.VenousBlood.Plasma.20|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          0.0134128164,
+          0.0312965661,
+          0.0804769,
+          0.1609538,
+          0.3308495,
+          0.496274143,
+          0.7421758,
+          0.9925485,
+          1.49329364,
+          1.98956835,
+          2.99553
+        ],
+        "Dimension": "Time",
+        "Unit": "h"
+      }
+    },
+    {
+      "Name": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin.20",
+      "ExtendedProperties": [
+        {
+          "Name": "Sheet",
+          "Value": "Data"
+        },
+        {
+          "Name": "Organ",
+          "Value": "Skin"
+        },
+        {
+          "Name": "Compartment",
+          "Value": "Tissue"
+        },
+        {
+          "Name": "Molecule",
+          "Value": "Inulin"
+        },
+        {
+          "Name": "Species",
+          "Value": "Rat"
+        },
+        {
+          "Name": "Dose_mgKg",
+          "Value": "20"
+        }
+      ],
+      "Columns": [
+        {
+          "Name": "Measurement",
+          "RelatedColumns": [
+            {
+              "Name": "Error",
+              "QuantityInfo": {
+                "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin.20|ObservedData|Skin|Tissue|Inulin|Error"
+              },
+              "DataInfo": {
+                "Origin": "ObservationAuxiliary",
+                "AuxiliaryType": "ArithmeticStdDev",
+                "MolWeight": 5500.0
+              },
+              "Values": [
+                2.692123,
+                1.588902,
+                1.896984,
+                0.490139723
+              ],
+              "Dimension": "Concentration (mass)",
+              "Unit": "µg/ml"
+            }
+          ],
+          "QuantityInfo": {
+            "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin.20|ObservedData|Skin|Tissue|Inulin|Measurement"
+          },
+          "DataInfo": {
+            "Origin": "Observation",
+            "AuxiliaryType": "Undefined",
+            "MolWeight": 5500.0
+          },
+          "Values": [
+            17.790041,
+            9.931403,
+            6.606544,
+            2.332633
+          ],
+          "Dimension": "Concentration (mass)",
+          "Unit": "mg/l"
+        }
+      ],
+      "BaseGrid": {
+        "Name": "Time",
+        "QuantityInfo": {
+          "Path": "Tsuji1983_PBPK_Antibiotics_PKSimImport.Skin.20|Time",
+          "Type": "Time"
+        },
+        "DataInfo": {
+          "Origin": "BaseGrid",
+          "AuxiliaryType": "Undefined"
+        },
+        "Values": [
+          0.160555124,
+          0.4888815,
+          0.999599159,
+          1.99415
         ],
         "Dimension": "Time",
         "Unit": "h"
